@@ -1,0 +1,52 @@
+<!--El siguiente documento XML almacena la informacion acerca de los contactos de una agenda.
+Cada contacto esta enumerado por un atributo 'n',para saber cuantos contactos existen en ella.
+Cada contacto esta compuesto por las etiquetas nombre, apellido,direccion y telefono que son los datos personales que pertenecen a cada uno de nuestros contactos.
+La etiqueta de apellido esta enumerado por el atributo 'm' para identificar los dos apellidos que puede tener una persona (primer apellido m=1 y segundo apellido como m=2).
+La direccion esta compuesta por las etiquetas calle,numero,piso,letra,localidad y provincia.
+La etiqueta de telefono esta compuesto por las etiquetas casa, movil y trabajo haciendo referencia a los diferentes telefonos que puede disponer un contacto. -->
+
+<agenda>
+	<contacto n="1">
+
+		<nombre> Macarena </nombre>
+		<apellido m="1"> Martin </apellido>
+		<apellido m="2"> Sanchez</apellido>
+
+		<direccion>
+			<calle>Avenida Italia </calle>
+			<numero> 9 </numero>
+			<piso> 2 </piso>
+			<letra> G</letra>
+			<localidad> Algeciras</localidad>
+			<provincia> Cadiz </provincia>
+		</direccion>
+
+		<telefono>
+			<casa>956-66-15-79</casa>
+			<movil>626-268-105</movil>
+			<trabajo>956-09-48-88</trabajo>
+		</telefono>
+	</contacto>
+	<contacto n="2">
+
+		<nombre> Noelia </nombre>
+		<apellido m="1"> Iborra </apellido>
+		<apellido m="2"> Peña </apellido>
+
+		<direccion>
+			<calle>C/Oporto </calle>
+			<numero> 2 </numero>
+			<piso> 4 </piso>
+			<letra> D </letra>
+			<localidad> La Linea de la Concepcion</localidad>
+			<provincia> Algeciras </provincia>
+		</direccion>
+
+		<telefono>
+			<casa>956-09-02-54</casa>
+			<movil>673-210-687</movil>
+			<trabajo>956-64-03-87</trabajo>
+		</telefono>
+	</contacto>
+
+</agenda>
