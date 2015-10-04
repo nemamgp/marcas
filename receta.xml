@@ -1,0 +1,35 @@
+<!-- El siguiente documento XML tiene como finalidad estructurar la informacion de las recetas de cocina de un restaurante. Por tanto 
+nuestro elemento raiz sera <recetas></recetas> la cual a su vez estará formada por elementos denominados <receta></receta>, en el ejercicio
+solo nos dice una receta, pero pueden existir mas de una(Como es logico en cualquier restaurante); es por ello que esta etiqueta tendra como atributo 'n' para poder enumerar de esta manera la cantidad de recetas que existe en nuestro restaurante.
+El elemento receta estara formado por otros elementos,los cuales seran el bloque de informacion que queremos estructurar que nos permitira realizar busquedas por nombre de la receta, cantidad de comensales e ingredientes, dentro de la etiqueta <ingredientes></ingredientes> que sera un bloque general esta formado por las etiquetas <ingrediente></ingrediente>, algunos ingredientes tendran atributos o no, el atributo 'cantidad' que nos refleja la cantidad de ese ingrediente que se va a utilizar y ademas el atributo 'unidad' que hace referencia a la unidad de medida del ingrediente a utlizar.
+Por ultimo tenemos la etiqueta de <proceso></proceso>, el cual consta de una serie de pasos reflejados con la etiqueta <paso></paso>, esta etiqueta tendra como atributo 'numero' el cual lo identifica, dentro de cada paso se incluye todo el texto referido al proceso.  -->
+
+
+<recetas>
+	<receta n="1">
+		<nombre>Sopa de cebolla</nombre>
+		<comensales > 4 </comensales>
+
+		<ingredientes>
+			<ingrediente cantidad= "1" unidad="kg."> Cebolla </ingrediente>
+			<ingrediente cantidad= "2" unidad= "l."> Caldo de Carne </ingrediente>
+			<ingrediente cantidad= "100 " unidad="gr."> Mantequilla </ingrediente>
+			<ingrediente cantidad= "1" unidad="cucharada"> Harina </ingrediente>
+			<ingrediente cantidad= "100" unidad= "gr."> Queso Emmental Suizo o Gruyére Rallado </ingrediente>
+			<ingrediente unidad= "en rebanadas"> Pan tostado </ingrediente>
+			<ingrediente> Tomillo </ingrediente>
+			<ingrediente cantidad="1" unidad= "hoja"> Laurel </ingrediente>
+			<ingrediente> Pimienta </ingrediente>
+		</ingredientes>
+
+		<proceso>
+			<paso nunero="1"> Pelar y partir las cebollas en rodajas finas</paso>
+			<paso numero="2"> Rehogarlas con la mantequilla, sal y pimienta a fuego lento hasta que estén transparentes sin dorarse. </paso>
+			<paso numero="3"> Añadir la harina sin dejar de remover.</paso>
+			<paso numero="4"> Ponerlo en una cazuela con el caldo, el tomillo y el laurel. </paso>
+			<paso numero="5"> Dejar cocer a fuego lento durante unos 15 minutos. </paso>
+			<paso numero="6"> Poner las rebanadas de pan encima, espolvorear el queso y gratinar al horno.  </paso>
+		</proceso>
+	</receta>
+
+</recetas>
